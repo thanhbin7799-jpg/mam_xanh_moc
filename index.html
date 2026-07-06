@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mâm Xanh Mộc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Mâm Xanh Mộc">
+      <span class="logo">MX</span>
+      <span><strong>Mâm Xanh Mộc</strong><small>Bếp Việt bình dân</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#home">Trang chủ</a>
+      <a href="#menu">Thực đơn</a>
+      <a href="#story">Kể chuyện</a>
+      <a href="#space">Không gian</a>
+      <a href="#booking">Đặt bàn</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Mở menu">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Bếp Việt đương đại</p>
+        <h1>Mâm Xanh Mộc</h1>
+        <p>Bữa ăn Việt bình dân, ấm bụng và đẹp mắt cho bữa sáng, bữa trưa nhanh gọn hoặc tối sum vầy.</p>
+        <div class="actions">
+          <a class="btn primary" href="#menu">Xem thực đơn</a>
+          <a class="btn ghost" href="#booking">Đặt bàn</a>
+        </div>
+        <div class="chips">
+          <span>Mở cửa 09:00 - 22:00</span>
+          <span>Giá từ 18.000đ</span>
+          <span>Món Việt mỗi ngày</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick">
+      <div><strong>Bữa sáng</strong><p>Phở, cháo, bánh mì nóng.</p></div>
+      <div><strong>Bữa trưa</strong><p>Cơm tấm, bún chả, mì Quảng.</p></div>
+      <div><strong>Bữa tối</strong><p>Không gian ấm cho gia đình.</p></div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Thực đơn hôm nay</p>
+        <h2>Món ngon được yêu thích</h2>
+      </div>
+      <div class="menu-tools">
+        <input class="menu-search" type="search" placeholder="Tìm món: phở, cơm tấm, chè...">
+        <div class="filters">
+          <button class="filter active" data-filter="all" type="button">Tất cả</button>
+          <button class="filter" data-filter="main" type="button">Món chính</button>
+          <button class="filter" data-filter="street" type="button">Đường phố</button>
+          <button class="filter" data-filter="dessert" type="button">Tráng miệng</button>
+        </div>
+        <p class="search-result">Đang hiển thị tất cả món.</p>
+      </div>
+      <div class="dish-grid"></div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="story-image"></div>
+      <div class="story-content">
+        <p class="eyebrow">Từ căn bếp nhỏ</p>
+        <h2>Kể chuyện bằng hương vị quê nhà</h2>
+        <p>Mâm Xanh Mộc bắt đầu từ những bữa cơm gia đình: nồi nước dùng thơm, mâm rau xanh và tiếng gọi nhau khi món còn nóng.</p>
+        <ul>
+          <li>Mỗi món giữ lại một ký ức thân quen của bếp Việt.</li>
+          <li>Gia vị nêm vừa miệng, dễ ăn.</li>
+          <li>Phù hợp bữa sáng, chiều và tối cùng người thân.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="space" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Không gian quán</p>
+        <h2>Ấm cúng để thưởng thức, tiện lợi để mua mang về</h2>
+        <p>Quán sạch, thoáng, phù hợp ăn tại chỗ, đặt bàn nhóm đông hoặc mua mang về.</p>
+      </div>
+      <div class="space-grid">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1100&q=85" alt="Không gian quán ăn">
+        <div class="space-cards">
+          <article><strong>Ăn tại quán</strong><p>Bàn ghế gọn gàng, ánh sáng ấm.</p></article>
+          <article><strong>Mua mang về</strong><p>Đóng gói nhanh, sạch và tiện.</p></article>
+          <article><strong>Nhóm đông</strong><p>Có thể giữ bàn trước.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking">
+      <div>
+        <p class="eyebrow">Đặt bàn</p>
+        <h2>Giữ chỗ cho bữa ăn kế tiếp</h2>
+        <p>Thời gian phục vụ từ 09:00 sáng đến 22:00 tối.</p>
+      </div>
+      <form class="booking-form">
+        <label>Họ tên<input name="name" type="text" placeholder="Nguyễn An" required></label>
+        <label>Số khách<select name="guests"><option>2 khách</option><option>4 khách</option><option>6 khách</option><option>8 khách</option></select></label>
+        <label>Buổi<select name="session"><option>Sáng</option><option>Chiều</option><option>Tối</option></select></label>
+        <label>Thời gian<input name="time" type="time" value="09:00" min="09:00" max="22:00" required></label>
+        <button class="btn primary" type="submit">Gửi yêu cầu</button>
+        <p class="booking-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="contact" class="contact">
+      <div>
+        <p class="eyebrow">Liên hệ</p>
+        <h2>Ghé bếp hoặc nhắn cho chúng tôi</h2>
+      </div>
+      <div class="contact-list">
+        <p><span>Địa chỉ</span>24 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+        <p><span>Điện thoại</span>090 123 4567</p>
+        <p><span>Email</span>hello@mamxanhmoc.vn</p>
+        <p><span>Giờ mở cửa</span>09:00 - 22:00 mỗi ngày</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Mâm Xanh Mộc. Ẩm thực Việt trong từng khoảnh khắc.</footer>
+  <div class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
